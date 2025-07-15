@@ -1,0 +1,81 @@
+
+body{
+  background-color: #eee;
+}
+
+.flex-grow-1{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #007bff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #007bff; /* أزرق داخلي */
+}
+
+.icon-circle:hover .service-icon {
+  color: white; /* تخلي الأيقونة تبقى بيضاء عند hover */
+}
+
+.service-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #333;
+}
+
+.icon-circle:hover .service-icon {
+  transform: scale(1.2);
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff; 
+  margin: 5px;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ffffff; 
+}
+.overlay {
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 123, 255, 0.829); /* أزرق شفاف */
+  z-index: 1;
+}
+
+.contact .container {
+  z-index: 2;
+}
+
+
+#stats .container {
+  z-index: 2;
+  position: relative;
+  color: white; 
+}
+#testimonials .container {
+  z-index: 2;
+}
